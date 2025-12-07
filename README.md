@@ -93,7 +93,7 @@ src/
 ### 1️⃣ Clone Repository
 
 ```sh
-git clone https://github.com/rafiqmia65/vehicle-rental-system.git
+git clone https://github.com/Arpan-Dey-Web/vehicle_rental_system
 cd vehicle-rental-system
 ```
 
