@@ -1,7 +1,7 @@
-# 🚗 Vehicle Rental System – REST API
+#--------------------------------------🚗 Vehicle Rental System – REST API-----------------------------------------------------------------------
 
-A role-based vehicle rental management system built with **Node.js**, **Express**, **TypeScript**, and **PostgreSQL**.
-This backend provides authentication, vehicle management, bookings, and admin/customer-specific operations.
+A complete role-based vehicle rental management backend built with **Node.js**, **Express**, **TypeScript**, and **PostgreSQL**.
+Provides secure authentication, vehicle management, bookings, and admin/customer operations.
 
 ---
 
