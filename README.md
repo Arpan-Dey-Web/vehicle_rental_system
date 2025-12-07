@@ -1,4 +1,4 @@
-<--------------------------------------🚗 Vehicle Rental System – REST API------------------------------------------------>
+#🚗 Vehicle Rental System – Backend System
 
 A complete role-based vehicle rental management backend built with **Node.js**, **Express**, **TypeScript**, and **PostgreSQL**.
 Provides secure authentication, vehicle management, bookings, and admin/customer operations.
@@ -10,7 +10,7 @@ Provides secure authentication, vehicle management, bookings, and admin/customer
 ## 🌐 Live API URL
 
 ```
-https://vehicle-rental-system-brown.vercel.app/
+https://vehicle-rental-system-backend-blue.vercel.app/
 ```
 
 ---
@@ -21,14 +21,14 @@ https://vehicle-rental-system-brown.vercel.app/
 
 - Register & Login
 - JWT-based authentication
-- Role-based access: **admin**, **customer**
+- Role-based access: **Admin**, **Customer**
 
 ### 🚘 Vehicle Management
 
-- Add a vehicle (admin only)
+- Add a vehicle (Admin only)
 - Get all vehicles
 - Get single vehicle
-- Update/Delete vehicle (admin only)
+- Update/Delete vehicle (Admin only)
 - Vehicle availability auto-updated on booking/return
 
 ### 📅 Booking System
@@ -95,7 +95,7 @@ src/
 ### 1️⃣ Clone Repository
 
 ```sh
-git clone https://github.com/Arpan-Dey-Web/vehicle_rental_system
+git clone https://github.com/Arpan-Dey-Web/vehicle_rental_system.git
 cd vehicle-rental-system
 ```
 
@@ -141,8 +141,8 @@ npm start
 
 | Method | Endpoint                | Description       |
 | ------ | ----------------------- | ----------------- |
-| POST   | `/api/v1/auth/signup` | Register user     |
-| POST   | `/api/v1/auth/signin`    | Login & get token |
+| POST   | `/api/v1/auth/signup`   | Register user     |
+| POST   | `/api/v1/auth/signin`   | Login & get token |
 
 ### 🚘 Vehicles
 
@@ -167,7 +167,6 @@ npm start
 You can use:
 
 - Postman / Thunder Client
-- Swagger (coming soon)
 
 ---
 
