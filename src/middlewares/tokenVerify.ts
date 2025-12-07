@@ -2,7 +2,7 @@ import { Request, Response, NextFunction } from "express";
 import jwt from "jsonwebtoken";
 import config from "../config/config";
 
-export const roleTokenVerify = (role?: string) => {
+export const tokenVerify = (role?: string) => {
   return (req: Request, res: Response, next: NextFunction) => {
     const authHeader = req.headers.authorization;
 

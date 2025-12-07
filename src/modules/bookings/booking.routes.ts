@@ -1,16 +1,16 @@
 import express from "express";
-import { roleTokenVerify } from "../../middlewares/roleTokenVerify";
+import { tokenVerify } from "../../middlewares/tokenVerify";
 import { bookingControllers } from "./booking.controllers";
 
 const router = express.Router();
 
 // Customer or Admin can create booking
-router.post("/", roleTokenVerify(), bookingControllers.createBooking);
+router.post("/", tokenVerify(), bookingControllers.createBooking);
 
 // Get all bookings Admin or customer base
-router.get("/", roleTokenVerify(), bookingControllers.getAllBookings);
+router.get("/", tokenVerify(), bookingControllers.getAllBookings);
 
 // Booking Update
-router.put("/:bookingId", roleTokenVerify(), bookingControllers.updateBooking);
+router.put("/:bookingId", tokenVerify(), bookingControllers.updateBooking);
 
 export const bookingRoutes = router;

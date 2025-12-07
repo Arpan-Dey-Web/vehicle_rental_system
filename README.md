@@ -3,8 +3,6 @@
 A complete role-based vehicle rental management backend built with **Node.js**, **Express**, **TypeScript**, and **PostgreSQL**.
 Provides secure authentication, vehicle management, bookings, and admin/customer operations.
 
-
-
 ---
 
 ## 🌐 Live API URL
@@ -76,7 +74,7 @@ src/
  │   └── db.ts
  ├── middlewares/
  │   ├── isAdminOrCustomer.ts
- │   └── roleTokenVerify.ts
+ │   └── tokenVerify.ts
  ├── modules/
  │   ├── auth/
  │   ├── bookings/

@@ -1,6 +1,6 @@
 import express from "express";
 import { vehicleControllers } from "./vehicle.controller";
-import { roleTokenVerify } from "../../middlewares/roleTokenVerify";
+import { tokenVerify } from "../../middlewares/tokenVerify";
 
 const router = express.Router();
 
@@ -13,17 +13,17 @@ router.get("/:vehicleId", vehicleControllers.getVehicleById);
 // Update Vehicle by Id
 router.put(
   "/:vehicleId",
-  roleTokenVerify("admin"),
+  tokenVerify("admin"),
   vehicleControllers.updateVehicle
 );
 
 // Admin-only route
-router.post("/", roleTokenVerify("admin"), vehicleControllers.createVehicle);
+router.post("/", tokenVerify("admin"), vehicleControllers.createVehicle);
 
 // Delete Vehicle
 router.delete(
   "/:vehicleId",
-  roleTokenVerify("admin"),
+  tokenVerify("admin"),
   vehicleControllers.deleteVehicle
 );
 
